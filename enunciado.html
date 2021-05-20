@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { 
+            font-family: 'Roboto', sans-serif;
+            padding: 20px;
+        }
+        span {
+            font-family: 'Courier New', sans-serif;
+        }
+        li, summary {
+            padding: 10px;
+        }
+        pre code {
+            background-color: #eee;
+            border: 1px solid #999;
+            display: block;
+            padding: 5px 25px 5px 5px;
+            max-width: fit-content;
+        }
+    </style>
+    <title>Ejercicios ES6</title>
+</head>
+<body>
+    <h1>Ejercicios ES6</h1>
+    <p>Toma el siguiente objeto como referencia para realizar los ejercicios inferiores. Recuerda utilizar sintaxis <strong>ES6</strong>.</p>
+    <pre>
+        <code>
+    const movies = [
+        { title: "The Matrix", genre: "Sci-fi", releaseDate: 1999 },
+        { title: "Lord of the Rings", genre: "Fantasy", releaseDate: 2001 },
+        { title: "Avatar", genre: "Sci-fi", releaseDate: 2009 },
+        { title: "Lalaland", genre: "Musical", releaseDate: 2016 },
+        { title: "Harry Potter and the Chamber of Secrets", genre: "Fantasy", releaseDate: 2002 },
+        { title: "Bohemian Rhapsody", genre: "Musical", releaseDate: 2018 },
+        { title: "1917", genre: "Military", releaseDate: 2019 },
+        { title: "Pulp Fiction", genre: "Crime", releaseDate: 1994 },
+        { title: "The Joker", genre: "Thriller", releaseDate: 2019 }
+    ];
+        </code>
+    </pre>
+
+    <h2>Ejercicios</h2>
+    <ol>
+        <li>Devuelve el nombre de cada película utilizando <span>forEach</span>.<br/>
+            <details>
+                <summary>SOLUCIÓN</summary>
+                <pre>
+                    <code>
+    movies.forEach(film => film.title)
+                    </code>
+                </pre>
+            </details>
+        </li>
+        <li>Devuelve el nombre de las películas que lanzadas antes de 2005.<br/>
+            <details>
+                <summary>SOLUCIÓN</summary>
+                <pre>
+                    <code>
+    movies.forEach((film) => { 
+        film.releaseDate < 2005 ? film.title : null;
+    });
+                    </code>
+                </pre>
+            </details>      
+        </li>
+    </ol>
+
+</body>
+</html>
